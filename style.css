@@ -1,0 +1,62 @@
+html,body{
+    background-image: url("https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg");
+    background-size: cover;
+}
+h1 {
+    font-family: "Roboto", cursive;
+    color: #F2F3F4;
+    display: flex;
+    margin: auto;
+    width: 40%;
+    justify-content: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    padding-top: 50px;
+}
+.container {
+    display: flex;
+    padding: 5% 30% 5% 30%;
+    flex-wrap: wrap;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    background-color: #FEFDD6;
+    margin: 5px;
+    border-radius: 10% 30%;
+    position: relative;
+    transition: all 0.5s linear;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: 'Roboto', cursive;
+    border-radius: 10px;
+    position: absolute;
+}
+.front{
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back{
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+
+
+
