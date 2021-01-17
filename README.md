@@ -1,2 +1,2 @@
 project-flashcards
- Activity developed in the Jetbrains Academy web developer course.
+ Activity developed in the Jetbrains Academy Web Developer Course.
